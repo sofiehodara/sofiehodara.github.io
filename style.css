@@ -1,0 +1,118 @@
+body {
+background-image:  url(index/bckgrnd-2.png), url(index/bckgrnd-1.jpg);
+background-repeat: no-repeat, no-repeat;
+background-blend-mode: multiply, overlay;
+width: 100% ;
+background-size: cover;
+    background-color: rgb(0, 52, 133, .);
+}
+
+  
+    /* background-color: rgb(0, 52, 133);
+    background-height: 5100px ;
+    background-width: 1366px ;
+    background-image: url("index/bckgrnd-4.jpg") ;
+background-blend-mode: overlay ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    */
+
+div.topnav {
+    height: 130px ;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #00152f;
+    opacity: 0.98;
+    position: fixed;
+/*        border: green 2px solid;*/
+}
+
+div.topnav h1{
+    padding-left: 200px ;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    letter-spacing: .065em;
+    font-size: 2em ;
+    color: white ;
+    text-align: left ;
+    margin-bottom: 10px;
+/*    border: green 2px solid;*/
+}
+.nav {
+    padding-left: 200px ;
+    width: 100% ;
+}
+    
+#navread {
+/*    border: 2px solid red;*/
+         margin-right: 40px ;
+}
+#navwatch {
+
+/*    border: 2px solid red;*/
+     margin-right: 40px ;
+}
+#navpress {
+/*    border: 2px solid red;*/
+     margin-right: 40px ;
+}
+.nav a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.35em ;
+    font-weight: 400;
+    letter-spacing: .065em;
+        color: white ;
+      text-decoration: none;
+   
+}
+.nav a:hover {
+    color: #003471;
+    border-bottom: solid 5px;
+}
+/*
+.nav a:active {
+     border-bottom: solid 5px;
+} <!--orignally wanted to have selected link have underline--!>
+*/
+
+
+.frontlinks {
+top: 50% ;
+}
+
+div.footer {
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+/* margin-top: 5025px ; 
+   <!--howto deal with sitting at bottom of page?--!>*/
+/*    height: 80px;*/
+    background-color: #00152f;
+    opacity: 0.98;
+ position: fixed;
+}
+
+div.footer p {
+    padding-top: 10px ;
+      padding-bottom: 10px ;
+    padding-left: 200px ;
+    font-size: 1.1em ;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    color: white ;
+    letter-spacing: .1em ;
+/*    line-height: 1.2em;*/
+    text-transform: uppercase;
+    text-align: left ;
+   text-decoration-style: none ;}
+
+a#footer {
+    color: grey;
+       text-decoration: none;
+}
+
+a#footer:hover {
+    color: white;
+    border-bottom: solid 4px;
+}
