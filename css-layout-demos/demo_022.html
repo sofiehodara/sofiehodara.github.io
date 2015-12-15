@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Layout 022 | float: left/right</title>
+	<style type="text/css">
+	/* NOTE: If a parent element only contains floated elements, the parent element will collapse to a zero height. */
+	/* See pages 373-374 in "HTML & CSS" for details about how to fix this problem. */
+	/* You can also read about it at the section entitled "The Great Collapse" at http://css-tricks.com/all-about-floats/. */
+
+	.red {
+		background: red;
+	}
+
+	.green {
+		/* NOTE: you need to specify a width for the floated element; here it's defined in the ".shared" rule below. */
+		/* Float: right will push this element as far to the right of the containing element as possible. */
+
+		/* Block level elements _above_ a floated element will not be affected by it. However, elements _below_ will wrap around the floated element. */
+		float: right;
+		background: green;
+	}
+
+	.blue {
+		background: blue;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (float: right)
+	</div>
+	<div class="blue shared">3
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

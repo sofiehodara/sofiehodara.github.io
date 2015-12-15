@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Layout 013 | position: absolute</title>
+	<style type="text/css">
+
+	.red {
+		position: static;
+		background: red;
+
+	}
+
+	.green {
+		/* INSTRUCTIONS: scroll down in the browser window to illustrate this concept. */
+		/* This is absolute positioning; use in conjunction with top, left, right, bottom properties. */
+		/* With an absolutely positioned element, the block is taken out of the flow altogether and no longer impacts the flow of other elements on the page. */
+		/* The block is positioned in relation to its containing element, which in this case is the body element. */
+		position: absolute;
+		top: 50px ;
+		left: 50px ;
+		background: green;
+	}
+
+	.blue {
+		position: static;
+		background: blue;
+	}
+
+	.orange {
+		position: static;
+		background: orange;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (position: absolute)
+	</div>
+	<div class="blue shared">3
+	</div>
+	<div class="orange shared">4
+	</div>
+	<div class="red shared">5
+	</div>
+	<div class="blue shared">6
+	</div>
+	<div class="orange shared">7
+	</div>
+	<div class="red shared">8
+	</div>
+	<div class="blue shared">9
+	</div>
+	<div class="orange shared">10
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

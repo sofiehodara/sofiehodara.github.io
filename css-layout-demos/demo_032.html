@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Layout 032 | clear: right</title>
+	<style type="text/css">
+
+	.red {
+		background: red;
+	}
+
+	.green {
+		/* Float: right pushes the green square all the way to the right. */
+		float: right;
+		background: green;
+				/*height: 250px !important;*/
+
+	}
+
+	.blue {
+		/* If you do not want elements below a floated element to wrap around it, you can apply the clear property to the following element using "clear: left", "clear: right" or "clear: both". */
+		/* An element that has the clear property set on it will not move up adjacent to the float like the float desires, but will move itself down past the float. */
+		clear: right ;
+		background: blue;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (float: right)
+	</div>
+	<div class="blue shared">3 (clear: right)
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

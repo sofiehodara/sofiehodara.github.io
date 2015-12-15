@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Layout 031 | clear: none</title>
+	<style type="text/css">
+	/* The clear property works in conjunction with the float property. */
+	/* The clear property allows you to say that no element (within the same containing element) should touch the left or right-hand sides of a box. Below are the valid values. */
+	/* 
+	Left: the left-hand side of the element shouldn't touch any other elements in the same containing element.  
+	Right: the right-hand side of the element shouldn't touch any other elements in the same containing element.
+	Both: neither the left nor right-hand sides of the element should touch any other elements in the same containing element. This is the most common.
+	None: elements can touch either side.
+	*/
+	.red {
+		background: red;
+	}
+
+	.green {
+		/* Float: right pushes the green square all the way to the right. */
+		float: right;
+		background: green;
+	}
+
+	.blue {
+		/* clear: none is the default behavior. */
+		/* The blue rectangle is wrapping around the green one. This is the default behavior. */
+		/* This demo looks identical to demo_022.html. */
+		clear: none ;
+		background: blue;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (float: right)
+	</div>
+	<div class="blue shared">3 (clear: none)
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

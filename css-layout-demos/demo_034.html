@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Layout 034 | clear: both</title>
+	<style type="text/css">
+	/* In this example, I've increased the size of the green square to illustrate the concept. */
+
+	/*
+	Clear on an element only clears the floats _before_ it in document order. It doesn't clear floats _after_ it. 
+	The left and right values mean __clearance of left floats and right floats preceding an element respectively__. 
+	They don't mean clearing floats before and after the element. 
+	*/
+
+	.red {
+		/* Float: left pushes the red square all the way to the left and removes it from normal flow. */
+		float: left;
+		background: red;
+	}
+
+	.green {
+		/* Float: right pushes the green square all the way to the right and removes it from normal flow. */
+		float: right;
+		background: green;
+		/* We've forcibly resized this square. */ 
+		width: 250px !important;
+		height: 250px !important;
+	}
+
+	.blue {
+		/* The clear: both makes sure the blue square pops under the red and green squares. */
+		clear:both;
+		background: blue;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1 (float: left)
+	</div>
+	<div class="green shared">2 (float: right)
+	</div>
+	<div class="blue shared">3 (clear: both)
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

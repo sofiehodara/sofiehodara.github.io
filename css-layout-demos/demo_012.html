@@ -1,0 +1,90 @@
+<html>
+<head>
+	<title>Layout 012 | position: relative</title>
+	<style type="text/css">
+
+	.red {
+		position: static;
+		background: red;
+
+	}
+
+	.green {
+		/* This is relative positioning; for use in conjunction with top, left, right, and bottom properties. */
+		/* Relative positioning moves an element in relation to where it would have been in the normal flow. */
+		/* The other elements around the relatively positioned element do not reflow. */
+		position: relative;
+		top: 50px ;
+		left: 50px ;
+		/* bottom: ;
+		right: ;
+		*/
+		background: green;
+	}
+
+	.blue {
+		position: static;
+		background: blue;
+	}
+
+	.orange {
+		position: static;
+		background: orange;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (position: relative)
+	</div>
+	<div class="blue shared">3
+	</div>
+	<div class="orange shared">4
+	</div>
+	<div class="red shared">5
+	</div>
+	<div class="blue shared">6
+	</div>
+	<div class="orange shared">7
+	</div>
+	<div class="red shared">8
+	</div>
+	<div class="blue shared">9
+	</div>
+	<div class="orange shared">10
+	</div>
+	<div class="red shared">11
+	</div>
+	<div class="blue shared">12
+	</div>
+	<div class="orange shared">13
+	</div>
+
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

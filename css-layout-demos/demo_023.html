@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Layout 023 | float: right (multiple)</title>
+	<style type="text/css">
+
+	/* See what happens when we float multiple elements in a row. */
+
+	.red {
+		float: right;
+		background: red;
+	}
+
+	.green {
+		float: right;
+		background: green;
+	}
+
+	.blue {
+		float: right;
+		background: blue;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1 (float: right)
+	</div>
+	<div class="green shared">2 (float: right)
+	</div>
+	<div class="blue shared">3 (float: right)
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>

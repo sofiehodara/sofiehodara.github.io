@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Layout 042 | z-index: -5</title>
+	<style type="text/css">
+
+	.red {
+		position: static;
+		background: red;
+
+	}
+
+	.green {
+		/* We're using a relatively positioned gren square in this demo. The green square is behind the blue square. */
+		position: relative;
+		z-index: -5 ;
+		top: 50px ;
+		left: 50px ;
+		background: green;
+	}
+
+	.blue {
+		position: static;
+		background: blue;
+	}
+
+	.orange {
+		position: static;
+		background: orange;
+	}
+
+	.shared {
+		border: 1px solid white ; 
+		margin-top: 20px ;
+		margin-bottom: 20px ;
+		width: 150px ;
+		height: 150px;
+		padding: 5px ;
+		color: white;
+		font-family: Helvetica;
+		font-size: 20px ;
+	}
+	.back, .back a {
+		color: #ccc ;
+		text-decoration: none;
+		font-family: Helvetica;
+		position: fixed;
+		bottom: 20px ;
+		right: 20px;
+		-webkit-transition:color 0.3s ease;
+	}
+	.back a:hover {
+		color: #000;
+		-webkit-transition:color 0.3s ease;
+	}	
+
+	</style>
+</head>
+<body>
+
+	<div class="red shared">1
+	</div>
+	<div class="green shared">2 (z-index: -5)
+	</div>
+	<div class="blue shared">3
+	</div>
+	<div class="orange shared">4
+	</div>
+	<div class="back"><a href="index.html">&laquo; back</a></div>
+
+</body>
+</html>
